@@ -9,9 +9,11 @@ using UnityEngine.InputSystem.HID;
 public class PlayerMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Rigidbody rbPlayer;
+    private CharacterController ccPlayer;
     public Vector2 moveValue;
     public float movementSpeed, jumpForce;
+    public float verticalSpeed;
+    public float gravity = 9.81f;
     private bool canWalk, canJump;
     private Animator anim;
     [SerializeField] private float rotateSpeed;
@@ -19,24 +21,30 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
-        rbPlayer = GetComponent<Rigidbody>();
+        ccPlayer = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     public void Moving()
     {
-        float valX = Input.GetAxis("Horizontal");
-        float valY = Input.GetAxis("Vertical");
-
-        if (valX!=0||valY!=0)
+        float valY = Input.GetAxis("Horizontal");
+        float valX = Input.GetAxis("Vertical");
+        if (valY != 0 || valX != 0)
         {
-           
-            rbPlayer.velocity = (new Vector3(valX * movementSpeed * Time.deltaTime, 0, valY * movementSpeed * Time.deltaTime));
-            transform.Rotate(new Vector3(0,rotateSpeed * Time.fixedDeltaTime*valX,0));
-            canWalk = true;
+            canWalk = true; 
+            if (valX!=0)
+            {
+                ccPlayer.Move(transform.forward *valX* (movementSpeed * Time.deltaTime));
+            }
 
+            if (valY != 0)
+            {
+                ccPlayer.Move(transform.right * valY * (movementSpeed / 2 * Time.deltaTime));
+                transform.Rotate(new Vector3(0,rotateSpeed * Time.fixedDeltaTime*valY,0));
+            }
         }
+     
 
        else
         {
@@ -69,12 +77,14 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded()&&Keyboard.current.spaceKey.isPressed)
         {
             canJump = true;
-            rbPlayer.AddForce(Vector3.up *jumpForce, ForceMode.Impulse);
+            
         }
         if(IsGrounded()&&!Keyboard.current.spaceKey.isPressed)
         {
             canJump = false;
         }
+        ccPlayer.Move(Vector3.up * (jumpForce*verticalSpeed * Time.deltaTime));
+        
     }
     bool IsGrounded()
     {
@@ -85,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
         {
             return true;
         }
-
+        verticalSpeed -= gravity * Time.deltaTime;
         return false;
     }
 
