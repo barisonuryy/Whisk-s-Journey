@@ -12,11 +12,12 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController ccPlayer;
     public Vector2 moveValue;
     public float movementSpeed, jumpForce;
-    public float verticalSpeed;
+    private float verticalSpeed;
     public float gravity = 9.81f;
     private bool canWalk, canJump;
     private Animator anim;
     [SerializeField] private float rotateSpeed;
+    private bool isGrounded;
 
     void Start()
     {
@@ -71,37 +72,46 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-
-        
+        isGrounded = ccPlayer.isGrounded;
         // Apply jump force if the character is grounded
-        if (IsGrounded()&&Keyboard.current.spaceKey.isPressed)
+        if (!isGrounded)
         {
-            canJump = true;
+            verticalSpeed -= gravity * Time.deltaTime;
+            
+           
+            
             
         }
-        if(IsGrounded()&&!Keyboard.current.spaceKey.isPressed)
+        else 
         {
+            verticalSpeed = -gravity * Time.deltaTime;
+         
+            
+            if (Input.GetKey(KeyCode.Space))
+            {
+                verticalSpeed = Mathf.Sqrt(2f * jumpForce * gravity);
+                canJump = true;
+            }
+
+          
+        }
+
+
+        if (isGrounded && !Input.GetKey(KeyCode.Space))
+        {
+            verticalSpeed = 0f;
             canJump = false;
+           
         }
         ccPlayer.Move(Vector3.up * (jumpForce*verticalSpeed * Time.deltaTime));
         
     }
-    bool IsGrounded()
-    {
-        // Raycast to check if the character is grounded
-        RaycastHit hit;
-        float distanceToGround = 0.1f;
-        if (Physics.Raycast(transform.position, -Vector3.up, out hit, distanceToGround))
-        {
-            return true;
-        }
-        verticalSpeed -= gravity * Time.deltaTime;
-        return false;
-    }
+
 
     private void OnAnimatorMove()
     {
         anim.SetBool("isWalk",canWalk);
         anim.SetBool("isJump",canJump);
+        anim.SetBool("isGrounded",isGrounded);
     }
 }

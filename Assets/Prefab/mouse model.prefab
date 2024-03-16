@@ -322,7 +322,6 @@ MonoBehaviour:
   moveValue: {x: 0, y: 0}
   movementSpeed: 20
   jumpForce: 20
-  verticalSpeed: 0
   gravity: 9.81
   rotateSpeed: 150
 --- !u!95 &4742513666621045687

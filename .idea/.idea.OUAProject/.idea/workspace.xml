@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="19521feb-f28a-450f-84fe-ea0d092db3a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OUAProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUAProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Start.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Start.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/mouse/PlayerAnimation/PlayerAnim.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/mouse/PlayerAnimation/PlayerAnim.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/mouse/PlayerMovement/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/mouse/PlayerMovement/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/mouse model.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/mouse model.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/testScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
