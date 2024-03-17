@@ -7,9 +7,9 @@ Oyunun amacı, Whisk karakteriyle karşılaştığı zorlukları aşmak ve belir
 Oyun İçeriği
 İlk mini oyunumuz, kart eşleştirme oyunudur. Oyuncular, eşleştirilmiş kartları bulmaya çalışarak hafızalarını test ederler.
 
-İkinci mini oyunumuzda, oyuncuların yapması gerekenler...
+İkinci mini oyunumuzda, oyuncuların yapması gereken oyuncumuzun kaçan balığı mouse ile yönlendirerek yakalamaya çalışmasıdır.
 
-Üçüncü mini oyunumuzda, oyuncuların karşılaştığı meydan okuma...
+Üçüncü mini oyunumuzda, oyuncuların karşılaştığı meydan okuma doğru zamanda, belirtilen yön tuşlarına basarak gerekli puana ulaşmaya çalıştığımız bir mekaniğine sahiptir.
 
 Dördüncü mini oyunumuzda oyuncular, belirli bir yönde yanıp sönen okları takip ederek reflekslerini ve dikkatlerini test ederler.
 
@@ -29,6 +29,7 @@ Oyun İçi Görüntüler
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/2102dbf2-5c81-49dc-b7c5-136f0fffeab2)
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/1d5b8eff-b226-4161-a4da-320351764b69)
 ![1image](https://github.com/barisonuryy/OUAProject/assets/86011311/f2818f1d-d852-4aa6-9d11-1cf3c6814dc8)
+![Screenshot (154)](https://github.com/barisonuryy/OUAProject/assets/86011311/6be8084c-969d-4a3c-9091-5458a3ca8fdb)
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/a477b6b5-783c-4a85-b923-7cf91c0480dc)
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/e7c28ac6-6177-4f24-af60-17bdb3e563b5)
 ![Screenshot (155)](https://github.com/barisonuryy/OUAProject/assets/86011311/ff70878a-56b6-448d-ba5e-c50f83365dbd)
