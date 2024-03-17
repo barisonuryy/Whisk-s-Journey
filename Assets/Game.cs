@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
-    [SerializeField] Transform TopSýnýr;
-    [SerializeField] Transform AltSýnýr;
+    [SerializeField] Transform TopSinir;
+    [SerializeField] Transform AltSinir;
     [SerializeField] Transform Fish;
     [SerializeField] Transform hook;
 
@@ -17,7 +17,7 @@ public class Game : MonoBehaviour
     bool pause = false;
 
     float fishTimer;
-    [SerializeField] float timerÝmpact = 3f;
+    [SerializeField] float timerimpact = 3f;
 
     float fishSpeed;
 
@@ -50,7 +50,7 @@ public class Game : MonoBehaviour
          Bounds b = hookSpriteRenderer.bounds;
          float ySize = b.size.y;
          Vector3 ls = hook.localScale;
-         float distance = Vector3.Distance(TopSýnýr.position, AltSýnýr.position);
+         float distance = Vector3.Distance(TopSï¿½nï¿½r.position, AltSï¿½nï¿½r.position);
          ls.y = (distance / ySize * hookSize);
          hook.localScale = ls; */
 
@@ -86,12 +86,12 @@ public class Game : MonoBehaviour
             hookProgress -= hookProgressDegradationPower * Time.deltaTime;
 
         }
-        if(hookProgress >= 499f )
+        if(hookProgress >= 250f )
         {
             Win();
         }
 
-        hookProgress = Mathf.Clamp(hookProgress, 100f, 500f); 
+        hookProgress = Mathf.Clamp(hookProgress, 100f, 250f); 
 
     }
 
@@ -99,7 +99,7 @@ public class Game : MonoBehaviour
     {
         //pause = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Debug.Log("Kazandýn");
+        Debug.Log("Kazandï¿½n");
     }
 
 
@@ -114,16 +114,16 @@ public class Game : MonoBehaviour
 
         hookPosition += hookPullVelocity;
         hookPullVelocity = Mathf.Clamp(hookPullVelocity, 0f, 1f);
-        hook.position = Vector3.Lerp(AltSýnýr.position, TopSýnýr.position, hookPosition);
+        hook.position = Vector3.Lerp(AltSinir.position, TopSinir.position, hookPosition);
 
         hookPosition += hookPullVelocity * Time.deltaTime; 
         hookPosition = Mathf.Clamp(hookPosition, hookSize /2, 1 - hookSize/2 ); 
 
        
 
-        //float hookNormalizedPosition = Mathf.Clamp01(hookPosition); // hookPosition'ý normalize edin
+        //float hookNormalizedPosition = Mathf.Clamp01(hookPosition); // hookPosition'ï¿½ normalize edin
 
-        ; // hookPosition'ý kullanarak Lerp yapýn
+        ; // hookPosition'ï¿½ kullanarak Lerp yapï¿½n
     }
 
     void FishMovement()
@@ -131,11 +131,11 @@ public class Game : MonoBehaviour
         fishTimer -= Time.deltaTime;
         if (fishTimer < 0f)
         {
-            fishTimer = UnityEngine.Random.value * timerÝmpact;
+            fishTimer = UnityEngine.Random.value * timerimpact;
             fishDestination = UnityEngine.Random.value;
         }
 
         fishPosition = Mathf.SmoothDamp(fishPosition, fishDestination, ref fishSpeed, Smoothing);
-        Fish.position = Vector3.Lerp(AltSýnýr.position, TopSýnýr.position, fishPosition);
+        Fish.position = Vector3.Lerp(AltSinir.position, TopSinir.position, fishPosition);
     }
 }

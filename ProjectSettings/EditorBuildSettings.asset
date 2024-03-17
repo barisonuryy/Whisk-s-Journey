@@ -8,7 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Beliz/Scenes/Start.unity
     guid: 78e55163d40dfd64baef17878bf84392
-  - enabled: 1
+  - enabled: 0
     path: Assets/Beliz/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 0
+    path: Assets/Scenes 1/SampleScene1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/ThirdGameAsset/ThirdMiniGame.unity
+    guid: cba77291665b78a4688fd3f5eca77b44
+  - enabled: 0
+    path: Assets/FirstMiniGame/sad.unity
+    guid: 3ed52864066db2b4e88f9da342dde7a7
+  - enabled: 0
+    path: Assets/Beliz/Scenes/CityScene.unity
+    guid: 6af6b2a92b7c4924abe851dc7d7b686f
   m_configObjects: {}
