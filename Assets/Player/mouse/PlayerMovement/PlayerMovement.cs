@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
                 ccPlayer.Move(transform.right * valY * (movementSpeed / 2 * Time.deltaTime));
                 transform.Rotate(new Vector3(0,rotateSpeed * Time.fixedDeltaTime*valY,0));
             }
+            Jump();
         }
      
 
