@@ -1,13 +1,13 @@
 # Whisk's Journey
  Whisk'in Macerası, Whisk adında sevimli bir fare karakteriyle kaos dolu bir ortamda mücadele ettiğiniz, belirli hedefleri tamamlamak için mini oyunlar oynadığınız bir oyundur.
 
-Oyun Amacı
+## Oyun Amacı
 Oyunun amacı, Whisk karakteriyle karşılaştığı zorlukları aşmak ve belirlenen hedefleri başarıyla tamamlamaktır. Hedefler, ekipçe hazırlanmış mini oyunlardan oluşmaktadır.
 
-Oyun İçeriği
+## Oyun İçeriği
 İlk mini oyunumuz, kart eşleştirme oyunudur. Oyuncular, eşleştirilmiş kartları bulmaya çalışarak hafızalarını test ederler.
 
-İkinci mini oyunumuzda, oyuncuların yapması gereken oyuncumuzun kaçan balığı mouse ile yönlendirerek yakalamaya çalışmasıdır.
+İkinci mini oyunumuzda, oyuncuların yapması gereken rastgele hareket eden çerçeveyi tutturmak için Left Mouse tuşuna basarak ilacın yapımını sağlamasıdır.
 
 Üçüncü mini oyunumuzda, oyuncuların karşılaştığı meydan okuma doğru zamanda, belirtilen yön tuşlarına basarak gerekli puana ulaşmaya çalıştığımız bir mekaniğine sahiptir.
 
@@ -15,16 +15,16 @@ Dördüncü mini oyunumuzda oyuncular, belirli bir yönde yanıp sönen okları 
 
 Son oyunumuzda, Whisk karakteri yıkılmak üzere olan yer altından 50 saniye içinde çıkarak eczaneden ilaçları alıp yardım helikopterine yetiştirmeye çalışır. Oyuncu, zamanla yarışırken engelleri aşmalı ve ilaçları zamanında ulaştırmalıdır.
 
-Oyun Kuralları
+## Oyun Kuralları
 Oyun boyunca oyuncunun dikkat etmeleri gereken bazı kurallar bulunmaktadır. Bu kurallar oyunun her bir bölümünde farklılık gösterebilir ve oyuncuların başarıyla ilerlemesi için önemlidir.
 
-Ekip
+## Ekip
 Barış Onur Yıldız <br>
 Beliz Yazıcı <br>
 Barış Çetin <br>
 Levent Günaydın
 
-Oyun İçi Görüntüler
+## Oyun İçi Görüntüler
 
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/2102dbf2-5c81-49dc-b7c5-136f0fffeab2)
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/1d5b8eff-b226-4161-a4da-320351764b69)
