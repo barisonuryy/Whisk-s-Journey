@@ -24,6 +24,9 @@ Beliz Yazıcı <br>
 Barış Çetin <br>
 Levent Günaydın
 
+## Tanıtım Videosu
+https://www.youtube.com/watch?v=NdA3GcsAM7s
+
 ## Oyun İçi Görüntüler
 
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/2102dbf2-5c81-49dc-b7c5-136f0fffeab2)
@@ -33,4 +36,9 @@ Levent Günaydın
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/a477b6b5-783c-4a85-b923-7cf91c0480dc)
 ![image](https://github.com/barisonuryy/OUAProject/assets/86011311/e7c28ac6-6177-4f24-af60-17bdb3e563b5)
 ![Screenshot (155)](https://github.com/barisonuryy/OUAProject/assets/86011311/ff70878a-56b6-448d-ba5e-c50f83365dbd)
+
+
+
+## Karşılaşılan Sorunlar
+Bazı yerlerde URP kullandığımız için materyalleri dönüştürmekte sorun yaşadık.
 
