@@ -40,5 +40,5 @@ https://www.youtube.com/watch?v=NdA3GcsAM7s
 
 
 ## Karşılaşılan Sorunlar
-Bazı yerlerde URP kullandığımız için materyalleri dönüştürmekte sorun yaşadık.
+Projemiz URP tabanlı olduğu için bazı materyalleri dönüştürmekte sorun yaşadık.
 
